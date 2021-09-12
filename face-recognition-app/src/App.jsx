@@ -2,7 +2,9 @@ import Navbar from "./Components/Navbar";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 //import Login from './Pages/Login';
 //import signup from './Pages/SignUp';
-import Landing from "./Pages/Landing";
+// import Landing from "./Pages/Landing";
+// import SignUp from "./Pages/SignUp";
+import Login from "./Pages/Login";
 
 
 
@@ -11,9 +13,9 @@ function App() {
 
 
     <div className="App">
+      <Login />
 
-
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Navbar />
         <Switch>
           <Route path='/' exact>
@@ -30,7 +32,7 @@ function App() {
           </Route>
         </Switch>
 
-      </BrowserRouter>
+      </BrowserRouter> */}
 
     </div>
 
