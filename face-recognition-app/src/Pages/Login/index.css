@@ -1,45 +1,53 @@
-#login_container{
+#signin_container{
 min-height: 100vh;
 display: flex;
-justify-content: center;
 align-items: center; 
+justify-content: center;
+
 }
-#login_container form{
+#signin_container_form{
 height: 70vh;
-padding-left: 5em;
 display: flex;
 flex-direction: column;
- justify-content: center;
-border-left: 1.5px solid #666666;
+justify-content: center;
 margin-left: -2.5em;
-z-index: -1; 
+flex:5;
 }
-#login_container #login_image img{
-max-width: 550px;
-margin-left: 6.5em;
-} 
-#login_container #login_image label{
+#signin_container_form label{
     color: #3F3D56;
 }
-#login_container .email_login{
-margin-top: 2.5em;
-}  
-#login_container input{
-color: #3F3D56;
+#mid-line{
+border-left: 1.5px solid #666666;
+height: 70vh;
+ z-index: -1;
+ margin-left:-1.9em;  
+ flex:1;
+}
+#signin_image{
+    max-width: 550px;
+    flex:8;
+    margin-left: 6.5em;
+}
+#signin_container input{
+color: #2F2E41;
 border: 1.9px solid #3F3D56;
 border-radius: 2em;
 width: 31.25em;
 height: 4em;
 margin-bottom: 3em;
+text-align: center;
 }
-#login_container input:focus{
-    border: 1.5px solid #FF5D00;
+#signin_container input:focus{
+border: 1.5px solid #FF5D00;
 }
-#loginform-group{
+#signin_container_form .email{
+    margin-top: 1.5em;
+}
+#signinform-group{
 display: flex;
 flex-direction: column;
 }
-#login_submit{
+#signin_submit_btn{
 background: #FF5D00;
 cursor: pointer;
 width: 28.5em;
@@ -52,39 +60,39 @@ border-radius: 2em;
 position: absolute;
 bottom: 8em;
 }
-#login_submit:hover
-{
-background: #3F3D56;
-}
-#login_container a{
+#fp-link{
 text-decoration: none;
 color: #FF5D00;
 font-weight: bold;
 }
-#login_container a:hover{
+#fp-link:hover{
 color: #3F3D56;
 }
-#login_container h1{
+
+#signin_container_form h1{
 font-weight: bold;
 color: #2F2E41;
 position: absolute;
 top: 4em;
 }
-#login_container label::after{
+#signin_submit_btn:hover{
+background: #3F3D56;
+}
+#signin_container_form label::after{
 content:" *";
 color: #FF5D00;
 display:inline;
 }
-#login_container h4,h5{
+#signin_container_form h4,h5{
 color: #2F2E41;
 margin-bottom: 0.5em;
 font-weight: normal;
 }
-#login_container h5{
+#signin_container_form h5{
 position: absolute;
 bottom: 3em;
 margin-left: 6em;
 }
-#login_container h6{
+#signin_container_form h6{
 font-size: 16px;
 }
