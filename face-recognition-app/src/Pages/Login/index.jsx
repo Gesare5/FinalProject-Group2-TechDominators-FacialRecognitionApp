@@ -3,6 +3,7 @@ import { useState } from "react";
 import Group from '../../store/Group.9.mod.png';
 import './index.css';
 
+
 function Login() {
 
     const initialValues = {
@@ -40,11 +41,13 @@ function Login() {
 
     return (
         <div>
-            <div id="login_container">
-                <div id="login_image">
+            <div id="signin_container">
+                <div id="signin_image">
                     <img src={Group} alt="" />
                 </div>
-                <form action="">
+                <div id="mid-line">
+                </div>
+                <form action="" id="signin_container_form">
                     <h1>Sign In To Reflex ID</h1>
                     <h4 >
                         Welcome Back!!
@@ -52,7 +55,7 @@ function Login() {
                     <h4 >
                         Please Sign In with the data you entered in your registration.
                     </h4>
-                    <div className="email_login" id="loginform-group">
+                    <div id="signinform-group" className="email">
                         <label htmlFor="">EMAIL</label>
                         <input
                             type="text"
@@ -63,8 +66,7 @@ function Login() {
                             required
                         />
                     </div>
-
-                    <div id="loginform-group">
+                    <div id="signinform-group">
                         <label htmlFor="">PASSWORD</label>
                         <input
                             type="password"
@@ -75,12 +77,12 @@ function Login() {
                             required
                         />
                     </div>
-                    <h6 ><a href="/">Forgot Password?</a></h6>
+                    <h6><a id="fp-link" href="/">Forgot Password?</a></h6>
 
-                    <button id="login_submit" type="submit" value="" >
+                    <button id="signin_submit_btn" type="submit" value="" >
                         SIGN IN</button>
 
-                    <h5 >Don't have an Account?  <a href="/sign-up">Sign Up</a></h5>
+                    <h5 >Don't have an Account?  <a id="fp-link" href="/sign-up">Sign Up</a></h5>
 
                 </form>
             </div>

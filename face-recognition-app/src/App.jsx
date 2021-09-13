@@ -11,7 +11,6 @@ function App() {
 
 
     <div className="App">
-      {/* <SignUp /> */}
 
       <BrowserRouter>
         <Navbar />
@@ -19,10 +18,10 @@ function App() {
           <Route path='/' exact>
             <Landing />
           </Route>
-          <Route path='/services'>
-            <services />
-          </Route>
-          <Route path='/Login'>
+          {/* <Route path='/services'>
+            <Services /> */}
+          {/* </Route> */}
+          <Route path="/Login">
             <Login />
           </Route>
           <Route path='/sign-up'>
