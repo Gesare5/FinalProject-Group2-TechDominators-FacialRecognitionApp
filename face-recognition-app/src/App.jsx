@@ -1,10 +1,8 @@
 import Navbar from "./Components/Navbar";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-//import Login from './Pages/Login';
-//import signup from './Pages/SignUp';
-// import Landing from "./Pages/Landing";
-// import SignUp from "./Pages/SignUp";
+import Landing from "./Pages/Landing";
 import Login from "./Pages/Login";
+import SignUp from "./Pages/SignUp";
 
 
 
@@ -13,9 +11,9 @@ function App() {
 
 
     <div className="App">
-      <Login />
+      {/* <SignUp /> */}
 
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Navbar />
         <Switch>
           <Route path='/' exact>
@@ -25,14 +23,14 @@ function App() {
             <services />
           </Route>
           <Route path='/Login'>
-            <login />
+            <Login />
           </Route>
           <Route path='/sign-up'>
-            <signup />
+            <SignUp />
           </Route>
         </Switch>
 
-      </BrowserRouter> */}
+      </BrowserRouter>
 
     </div>
 
