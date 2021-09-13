@@ -7,7 +7,9 @@ function SignUp() {
         <div>
             <div className="main-sign-up">
                 <div className="sign_up_container">
+
                     <form action="">
+                        <a href="/" className="back-link">Back</a>
                         <div classname="sign_group">
                             <label htmlFor="">FIRST NAME</label>
                             <input type="text" required />
@@ -32,11 +34,14 @@ function SignUp() {
                             <input type="text"
                                 required />
                         </div>
-
+                        <div>
+                            <input type="checkbox" className="checked" />
+                            <span class="checkmark">I Agree to the terms and conditions</span>
+                        </div>
                         <button className="sign_up_submit" type="submit" value="" >
                             SIGN UP</button>
 
-                        <p>Already have an Account?  <a href="">Sign In</a></p>
+                        <p>Already have an Account? <a href="">Sign In</a></p>
                     </form>
                     <div className="sign_up_image">
                         <img src={Group} alt="" />

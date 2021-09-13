@@ -1,95 +1,90 @@
-.login_container{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+#login_container{
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center; 
 }
-.login_container input{
+#login_container form{
+height: 70vh;
+padding-left: 5em;
+display: flex;
+flex-direction: column;
+ justify-content: center;
+border-left: 1.5px solid #666666;
+margin-left: -2.5em;
+z-index: -1; 
+}
+#login_container #login_image img{
+max-width: 550px;
+margin-left: 6.5em;
+} 
+#login_container #login_image label{
     color: #3F3D56;
-    border: 1.9px solid #3F3D56;
-    border-radius: 2em;
-    width: 31.25em;
-    height: 4em;
-    margin-bottom: 3em;
-    align-self: center;
 }
-.login_container form{
-    height: 70vh;
-    padding-left: 5em;
-    padding-right: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-left: 1.5px solid #666666;
-    margin-left: -8em;
-    z-index: -1;
-    
+#login_container .email_login{
+margin-top: 2.5em;
+}  
+#login_container input{
+color: #3F3D56;
+border: 1.9px solid #3F3D56;
+border-radius: 2em;
+width: 31.25em;
+height: 4em;
+margin-bottom: 3em;
 }
-.login_container .login_image img{
-    max-width: 550px;
-    margin-right: 6.5em;
-    /* box-shadow: 0px 0px 4px #666666; */
+#login_container input:focus{
+    border: 1.5px solid #FF5D00;
 }
 #loginform-group{
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 }
-.login_submit{
-    background: #FF5D00;
-    cursor: pointer;
-    width: 28.5em;
-    height: 4em;
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-    padding-top: 1em ;
-    padding-bottom: 1em;
-    color: white;
-    border-radius: 2em;
-    position: absolute;
-    bottom: 8em;
+#login_submit{
+background: #FF5D00;
+cursor: pointer;
+width: 28.5em;
+height: 3.8em;
+border: none;
+font-size: 15px;
+font-weight: bold;
+color: white;
+border-radius: 2em;
+position: absolute;
+bottom: 8em;
 }
-.login_submit:hover{
-    background: #3F3D56;
+#login_submit:hover
+{
+background: #3F3D56;
 }
-.login_container a{
-    text-decoration: none;
-    color: #FF5D00;
-    font-weight: bold;
+#login_container a{
+text-decoration: none;
+color: #FF5D00;
+font-weight: bold;
 }
-.login_container a:hover{
-    color: #3F3D56;
+#login_container a:hover{
+color: #3F3D56;
 }
-.login_container h1{
-    font-size: 45px;
-    font-weight: bold;
-    color: #2F2E41;
-    position: absolute;
-    top: 2em;
+#login_container h1{
+font-weight: bold;
+color: #2F2E41;
+position: absolute;
+top: 4em;
 }
-.login_container label::after{
-    content:" *";
-    color: #FF5D00;
-    display:inline;
+#login_container label::after{
+content:" *";
+color: #FF5D00;
+display:inline;
 }
-.login_container .email_login{
-    margin-top: 2.5em;
+#login_container h4,h5{
+color: #2F2E41;
+margin-bottom: 0.5em;
+font-weight: normal;
 }
-.login_form_div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#login_container h5{
+position: absolute;
+bottom: 3em;
+margin-left: 6em;
 }
-.login_container p{
-    color: #2F2E41;
-    margin-bottom: 0.5em;
-}
-.login_container .content2{
-    position: absolute;
-    bottom: 2em;
-}
-.login_container .content1{
-    
-    font-size: 18px;
+#login_container h6{
+font-size: 16px;
 }
