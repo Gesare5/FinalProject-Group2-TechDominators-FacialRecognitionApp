@@ -1,8 +1,9 @@
 #signin_container{
 min-height: 100vh;
 display: flex;
-align-items: center; 
+/* align-items: center;  */
 justify-content: center;
+padding-top: 2em;
 
 }
 #signin_container_form{
@@ -27,6 +28,7 @@ height: 70vh;
     max-width: 550px;
     flex:8;
     margin-left: 6.5em;
+    margin-top: 5.5em;
 }
 #signin_container input{
 color: #2F2E41;
@@ -71,7 +73,7 @@ color: #3F3D56;
 
 #signin_container_form h1{
 font-weight: bold;
-color: #2F2E41;
+color:#2F2E41;
 position: absolute;
 top: 4em;
 }

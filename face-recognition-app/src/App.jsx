@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Landing from "./Pages/Landing";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
+import ContactUs from "./Pages/Contact-us";
 
 
 
@@ -21,6 +22,9 @@ function App() {
           {/* <Route path='/services'>
             <Services /> */}
           {/* </Route> */}
+          <Route path='/contactus'>
+            <ContactUs />
+          </Route>
           <Route path="/Login">
             <Login />
           </Route>
