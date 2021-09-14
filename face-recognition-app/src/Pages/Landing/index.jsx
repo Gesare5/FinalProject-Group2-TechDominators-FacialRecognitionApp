@@ -4,6 +4,8 @@ import Card from '../../Components/Card';
 import { data } from '../../store/data';
 import './index.css';
 import image from '../../store/image 11.svg';
+import getgoogleplay from '../../store/getgoogleplay.png';
+import appstore from '../../store/appstore.png';
 import trafalgar from '../../store/trafalgar.svg';
 
 
@@ -16,12 +18,13 @@ function Landing() {
                 <div className="first-section-inside">
                     <div className="first-section-content">
                         <div className="first-section-contents">
-                            <h2>Facial Recognition</h2>
-                            <h2>App for Schools</h2>
-                            <p>Reflex ID provides schools a more secured
-                                verification platform for parents and guardians
-                                come over to pick up their wards from schools</p>
-                            <button className="first-section-btn">Sign Up Now</button>
+                            <h2>Facial Recognition <br /> App for Schools</h2>
+                            <p>Reflex ID provides schools a more <br /> secured
+                                verification platform for <br /> parents and guardians
+                                come over <br /> to pick up their wards from schools</p>
+                            <div className="first-section-btn">
+                                <a href="/sign-up">Sign Up Now</a>
+                            </div>
                         </div>
                     </div>
                     <div className="first-section-image">
@@ -31,10 +34,11 @@ function Landing() {
             </section>
 
             <section className="services" id="services">
-                <h1> Services </h1>
-                <p>We provide you the best options and services to suit your convenience while ensuring adequate safety measures are in check.</p>
+                <h1> Our Services </h1>
+                <div id="services-line"></div>
+                <h5>We provide you the best options and services to suit your convenience while ensuring <br /> adequate safety measures are in check.</h5>
                 <div className="services-div">
-                    <div >
+                    <div className="services-div-cards">
                         {data.map(({ image, title, description }) => (
                             <Card image={image} title={title} description={description} />
                         ))}
@@ -52,7 +56,8 @@ function Landing() {
                     <div className="features-content">
                         <div className="features-contents">
                             <h1>Facial Recognition Feature</h1>
-                            <p>Reflex ID possses the facial scab feature which uses the 3D face unlocking feature.</p>
+                            <div id="features-line"></div>
+                            <p>Reflex ID possses the facial scab feature <br /> which uses the 3D face unlocking feature.</p>
                             <button className="features-btn">Learn More</button>
                         </div>
                     </div>
@@ -65,8 +70,12 @@ function Landing() {
                             <h1>Worry less and stay security conscious with our mobile app</h1>
                             <p>If you are ever concerned about your child's activities while in school, explore our mobile-friendly app tohelp you learn how to keep track.</p>
 
+                            <div id="mobile-app-images">
+                                <img id="mobile-app-images-one" src={getgoogleplay} alt="" />
+
+                                <img id="mobile-app-images-two" src={appstore} alt="" />
+                            </div>
                             <p className="orange">IOS and Android apps coming soon!</p>
-                            <button className="Mobile-App-btn"> Download</button>
                         </div>
                     </div>
 

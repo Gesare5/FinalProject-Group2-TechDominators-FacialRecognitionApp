@@ -4,7 +4,9 @@ import './index.css';
 function Card({ image, title, description }) {
     return (
         <div className="Card">
-            <img src={image} alt="" className="cardImage" />
+            <div className="cardImage">
+                <img src={image} alt="" />
+            </div>
             <h3>{title}</h3>
             <p>{description}</p>
         </div>
