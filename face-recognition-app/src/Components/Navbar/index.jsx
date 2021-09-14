@@ -11,16 +11,18 @@ function Navbar() {
 
         // <header className={classes.header}>
 
-        <div className="navbar">
-            <nav className="nav-content">
-                {/* <div className="nav-content-images">
-                    <img src={logo2} alt="" />
-                    <img src={logo} alt="" />
-                    <br></br>
-                    <img src={ss} alt="" />
-                </div> */}
-                <ul>
-
+        <div id="navbar">
+            <nav id="nav-content">
+                <div id="nav-content-images">
+                    <div id="first-logo-nav">
+                        <img src={logo2} alt="" />
+                    </div>
+                    <div id="second-logo-nav">
+                        <img id="second-logo-nav-one" src={logo} alt="" />
+                        <img src={ss} alt="" />
+                    </div>
+                </div>
+                <ul id="nav-links">
                     <li>
                         <Link to='/' >Home</Link>
                     </li>
@@ -28,7 +30,11 @@ function Navbar() {
                         <Link to='/services' >Services</Link>
                     </li>
                     <li>
-                        <Link to='/Login' >Login</Link>
+                        <Link to='/contactus' >Contact Us</Link>
+                    </li>
+
+                    <li>
+                        <Link to='/Login' > Sign In</Link>
                     </li>
                     <li>
                         <Link to='/sign-up' >Sign Up</Link>

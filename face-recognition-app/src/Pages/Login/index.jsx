@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Group from '../../store/Group.9.mod.png';
 import './index.css';
 
@@ -23,21 +23,39 @@ function Login() {
         });
         console.log()
     };
+
     // handle input form submission
-    // function handleInputSubmission(e) {
-    // useEffect(() => {
-    //     setAppState({ loading: true });
-    //     const apiUrl = 'https://api.github.com/users/hacktivist123/repos';
-    //     axios.get(apiUrl).then((repos) => {
-    //         const allRepos = repos.data;
-    //         setAppState({ loading: false, repos: allRepos });
-    //     });
-    // }, [setAppState]);
+    function HandleInputSubmission(e) {
+        e.preventDefault();
 
+        // POST request using fetch inside useEffect React hook
+        const url = 'https://localhost:5001/api/v1/Authentication/login';
 
-    // const url = 'http://jsonplaceholder.typicode.com/users'; onSubmit={handleInputSubmission}
-    // }
+        fetch(url, {
+            // Adding method type
+            method: "POST",
 
+            // Adding body or contents to send
+            body: JSON.stringify({
+                Email: values.Email,
+                Password: values.Password
+            }),
+            // Adding headers to the request
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        })
+            // Converting to JSON
+            .then(response => response.json())
+
+            // Displaying results to console
+            .then(json => console.log(json))
+            .catch(error => {
+                // Handle error 
+                console.log('Error message: ', error);
+            });
+
+    }
 
     return (
         <div>
@@ -47,7 +65,7 @@ function Login() {
                 </div>
                 <div id="mid-line">
                 </div>
-                <form action="" id="signin_container_form">
+                <form action="" id="signin_container_form" onSubmit={HandleInputSubmission}>
                     <h1>Sign In To Reflex ID</h1>
                     <h4 >
                         Welcome Back!!
@@ -92,3 +110,16 @@ function Login() {
 }
 
 export default Login;
+
+// useEffect(() => {
+    //     setAppState({ loading: true });
+    //     const apiUrl = 'https://api.github.com/users/hacktivist123/repos';
+    //     axios.get(apiUrl).then((repos) => {
+    //         const allRepos = repos.data;
+    //         setAppState({ loading: false, repos: allRepos });
+    //     });
+    // }, [setAppState]);
+
+     // useEffect(() => {
+    // empty dependency array means this effect will only run once (like componentDidMount in classes)
+    // }, []);
