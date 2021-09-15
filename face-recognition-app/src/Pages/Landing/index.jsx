@@ -121,30 +121,30 @@ function Landing() {
                         <h2>
                             Company</h2>
                         <ul className="reflex-box">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Apps</a></li>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/">Testimonials</a></li>
+                            <li><a href="/">Apps</a></li>
                         </ul>
                     </li>
                     <li className="reflex-features">
                         <h2>
                             Region</h2>
                         <ul className="reflex-box h-box">
-                            <li><a href="#">Nigeria</a></li>
-                            <li><a href="#">South Africa</a></li>
-                            <li><a href="#">United States</a></li>
-                            <li><a href="#">Canada</a></li>
+                            <li><a href="/">Nigeria</a></li>
+                            <li><a href="/">South Africa</a></li>
+                            <li><a href="/">United States</a></li>
+                            <li><a href="/">Canada</a></li>
                         </ul>
                     </li>
                     <li>
                         <h2>
                             Help</h2>
                         <ul className="reflex-box">
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="/">Help Center</a></li>
+                            <li><a href="/">Support</a></li>
+                            <li><a href="/">Contact</a></li>
+                            <li><a href="/">Terms of Use</a></li>
+                            <li><a href="/">Privacy Policy</a></li>
                         </ul>
                     </li>
                 </ul>

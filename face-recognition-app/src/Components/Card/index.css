@@ -6,15 +6,16 @@
 	border-radius: 1em;
 	padding: 1.5em;
     font-size: smaller;
+    font-family: inherit;
     text-align: left;
     color: #4D4D4D;
     margin-left: 2em ;
-    box-shadow: 1px 5px 15px -8px #888;   
+    box-shadow: 1px 5px 15px -8px rgb(63,116,170);   
 }
 .cardImage img{
     border-radius: 0.8em;
-    box-shadow: 6px 8px 11px -10px #888;
-    border: 2px solid #888;
+    box-shadow: 6px 8px 11px -10px rgb(63,116,170);
+    border: 2px solid rgb(63,116,170);
     width:110px; 
     height: auto;     
 }

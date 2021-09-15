@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Group from '../../store/Group 14.svg';
 import './index.css';
 
@@ -66,7 +66,7 @@ function SignUp() {
 
                     <form action="" onSubmit={handleInputSubmission}>
                         <h2>Sign Up</h2>
-                        <a href="/" className="back-link">Back</a>
+                        {/* <a href="/" className="back-link">Back</a> */}
                         <div classname="sign_group">
                             <label htmlFor="">FIRST NAME</label>
                             <input
