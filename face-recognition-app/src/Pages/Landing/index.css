@@ -12,10 +12,10 @@
 }
 .first-section-image{
 display: inline-block;
-max-width: 700px;
+max-width: 650px;
 height: auto;
 width: auto;
-max-height:700px ;
+max-height:650px ;
 padding-top: 3em;
 }
 .first-section-content{
@@ -82,7 +82,7 @@ justify-content: center;
     
 }
 .services h1{
-    padding-bottom: 0.2em;
+    padding-bottom: 0.4em;
     margin-top: 2em;
     font-size: 38px;
     color: #4D4D4D;
@@ -98,6 +98,7 @@ justify-content: center;
 .services-div{
     padding: 1em;
     max-width: 900px; 
+    margin-top: 1.5em;
      
 }
 #services-line{
@@ -105,7 +106,7 @@ justify-content: center;
     width: 3em;
     background: #4D4D4D;
     border-radius: 0.1em;
-    margin-bottom: 0.7em;
+    margin-bottom: 1em;
 }
 .services-div-cards{
     display: grid;
@@ -118,6 +119,7 @@ border-radius: 2em;
 padding: 1em 1.5em;
 height: 3.7em;
 width: 13em;
+font-size: 15px;
 color: white;
 font-weight: bold;
 text-align: center;
@@ -184,7 +186,7 @@ margin-left: 1em;
 .features-btn{
 background: #FF5D00;
 border-radius: 2em;
-padding: 1.7em 1.9em;
+padding: 1.9em 1.9em;
 font-weight: bold;
 font-size: 15px;
 color: white;

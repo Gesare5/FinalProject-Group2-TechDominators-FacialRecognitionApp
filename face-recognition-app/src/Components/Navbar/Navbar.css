@@ -41,6 +41,7 @@ width: auto;
 #nav-links a{
   text-decoration: none;
   color: #3F74AA;
+  font-size: 18px;
   
 }
 #nav-links a:hover{

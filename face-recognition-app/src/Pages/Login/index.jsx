@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Group from '../../store/Group.9.mod.png';
 import './index.css';
 
