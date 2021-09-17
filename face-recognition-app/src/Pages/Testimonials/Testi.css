@@ -1,0 +1,150 @@
+.testiimg {
+  margin-top: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height:30%;
+    border-color: white;
+}
+
+  h1{color: orangered;
+    text-align:center;
+   display:block;
+   float:none;
+
+   padding: 20px 20px;
+
+}
+
+
+
+.styleTesti{align-items:center;
+ justify-content:center;
+ display:block;
+ margin-left: auto;
+ margin-right: auto;
+width:40%;
+flex:center;
+padding:14px 14px;
+color: orangered;
+
+};
+
+ .testibtn{
+  display:inline-block;
+  border:none;
+  padding:14px 14px;
+  text-align:center;
+  text-decoration:none;
+  font-size:16px;
+  color:white;
+    background-color:orangered;
+    border-radius:12px;
+    width: 50px;
+    justify-content:center;
+  }
+  .btndiv{background-color:black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    height:2%;
+  border-radius: 5px 5px 5px 5px ;}
+
+
+  .generaldiv{ 
+    
+    display:block;}
+.divimg{border-radius: 50%;}
+
+
+  .div1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    background-color: blue;
+    align-self: left;
+    color: white;
+    width: 30%;
+    height:50%;
+    border-radius: 20px 20px 20px 20px;
+ text-align: center;
+    justify-content: right;
+    height: 400px;
+    margin-right: 300px;
+    margin-top: 50px;
+    float: right;
+     }
+
+
+  .div2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    margin-top: 5px;
+    background-color:blue;
+    align-self: right;
+    color: white;
+    width: 30%;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+  
+    height: 400px;
+   
+    margin-left: 300px;
+  margin-top: 0%;}
+  
+  .div3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    background-color:blue;
+    color: white;
+    width: 30%;
+    border-radius: 20px 20px 20px 20px ;
+    align-self: right;
+    text-align: center;
+    height: 400px;
+    margin-right: 300px;
+    float: right;
+    margin-top: 50px;
+    }
+  
+  .div4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    background-color:blue;
+    color: white;
+    width: 30%;
+    border-radius: 20px 20px 20px 20px;
+    align-self: right;
+    text-align: center;
+ margin-left: 300px;
+ height: 400px;
+  }
+  
+.circularport{
+
+position: relative;
+width: 40%;
+height: 40%;
+overflow: hidden;
+border-radius: 50%;
+justify-self: center;
+align-self: center;
+margin-right: 700px;
+float: center;
+align-content: center;
+margin: auto;
+
+
+}
+.circularport img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+margin: auto;
+align-items: center;
+ 
+
+
+
+}

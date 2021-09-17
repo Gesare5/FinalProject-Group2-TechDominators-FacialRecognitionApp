@@ -5,7 +5,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 //import signup from './Pages/SignUp';
 import Landing from "./Pages/Landing";
 import Contactus from "./Pages/Contact-us";
-
+//import Navbar2 from "./Components/Navbar2";
+import Testimonials from "./Pages/Testimonials/Testi";
 
 
 
@@ -18,6 +19,7 @@ function App() {
 
       <BrowserRouter>
         <Navbar />
+      
         <Switch>
           <Route path='/' exact>
             <Landing />
@@ -34,11 +36,17 @@ function App() {
           <Route path='/sign-up'>
             <signup />
           </Route>
+          <Route path='/Testimonials'>
+            <Testimonials />
+          </Route>
         </Switch>
 
       </BrowserRouter>
 
     </div>
+
+
+
 
   );
 }

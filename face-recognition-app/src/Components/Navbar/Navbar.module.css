@@ -1,11 +1,18 @@
 .navbar {
+ 
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: 70vh;
+  height: 10%;
   background-color: white;
-  color: rgb(9, 9, 51);
-  margin-left: 100px;
+  color: #010111;
+  margin-left: 10px;
   float: left;
   flex-direction: left;
+  position: relative;
+  text-decoration: none;
+  margin-top: 0px;
+  
 }
 .content {
   float: left;
@@ -14,6 +21,7 @@
   width: auto;
   max-width: 500px;
   max-height: 40px;
+  margin-top: 1px;
 }
 
 .content2 {
@@ -23,6 +31,7 @@
   width: auto;
   max-width: 100px;
   max-height: 50px;
+  margin-top: 10px;
 }
 
 .content3 {
@@ -31,37 +40,55 @@
   height: auto;
   width: auto;
   max-width: 100px;
-  max-height: 7700px;
+  max-height: 70px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+
+ 
+  
 }
 
 .header {
-  width: 100%;
-  height: 10vh;
+  width: 80%;
+  height: 10%;
+  margin: 0px;
 }
 ul {
   display: flex;
-  justify-content: center;
-  align-items: left;
-  column-gap: 5px;
+  justify-content: right;
+  align-items: right;
+  column-gap: 0px;
   float: left;
-  padding: 0px;
-  margin-right: auto;
+  text-decoration: none !important;
+  text-emphasis: none;
+  padding: 5px 5px;
   font-size: 15px;
+  margin: 0px;
+  margin-left: 200px;
+  color: yellow;
 }
 li {
+  text-decoration: none !important;
+  margin: 0px;
   list-style-type: none;
-  padding-right: 5px;
+  padding-left: 0px;
   justify-content: right;
-  align-items: center;
-  margin-left: 200px;
-  float: left;
+  align-items: right;
+  margin-left: 100px;
+  float: none;
+  
+  
+
+ 
 }
 /*a {
   display: block;
   padding: 20px;
   color: aliceblue;
   text-decoration: none;
-} */
+} 
 
 p {
   font-weight: 100;

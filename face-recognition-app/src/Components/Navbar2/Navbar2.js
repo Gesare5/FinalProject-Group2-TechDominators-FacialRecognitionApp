@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import logo from '../../store/logo.svg';
 import logo2 from '../../store/logo2.svg';
 import ss from '../../store/ss.svg';
-import classes from './Navbar.module.css';
+import classes from './Navbar2.module.css';
 //import {Router} from 'react-router-dom';
 
-function Navbar() {
+function Navbar2() {
     return (
 
         <header className={classes.header}>
@@ -21,12 +21,11 @@ function Navbar() {
               
                
                  <ul>
-                 <li><Link to='/' style={{textDecoration:'none'}} >Home </Link></li>
+                    <li><Link to='/' style={{textDecoration:'none'}} >Home </Link></li>
                     <li><Link to='/contactus' style={{textDecoration:'none'}}>Contact</Link></li>
                     <li><Link to='/services' style={{textDecoration:'none'}} >Services</Link></li>
-                    <li><Link to='/sign-up' style={{textDecoration:'none'}} >Sign Up</Link></li>
-                    <li> <Link to='/Login' style={{textDecoration:'none'}} >Login</Link></li> 
-                    <li><Link to='/Testimonials' style={{textDecoration:'none'}} >Testimonials</Link></li> </ul>
+                    <li> <Link to='/Testimonials' style={{textDecoration:'none'}} >Testimonials</Link></li>
+                    <li><Link to='/sign-up' style={{textDecoration:'none'}} >Sign Up</Link></li> </ul>
             </nav>
 
         </div>
@@ -35,4 +34,4 @@ function Navbar() {
     );
 }
 
-export default Navbar;
+export default Navbar2;
